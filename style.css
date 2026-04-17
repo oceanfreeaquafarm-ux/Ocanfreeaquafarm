@@ -28,7 +28,10 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: 700;
   line-height: 1.2;
 }
@@ -46,8 +49,13 @@ a {
   padding: 0 20px;
 }
 
-.text-gold { color: var(--accent-gold); }
-.text-blue { color: var(--accent-blue); }
+.text-gold {
+  color: var(--accent-gold);
+}
+
+.text-blue {
+  color: var(--accent-blue);
+}
 
 .btn {
   display: inline-block;
@@ -130,7 +138,8 @@ header {
   position: relative;
 }
 
-.nav-links a:hover, .nav-links a.active {
+.nav-links a:hover,
+.nav-links a.active {
   color: var(--accent-gold);
 }
 
@@ -145,7 +154,8 @@ header {
   transition: width 0.3s ease;
 }
 
-.nav-links a:hover::after, .nav-links a.active::after {
+.nav-links a:hover::after,
+.nav-links a.active::after {
   width: 100%;
 }
 
@@ -191,8 +201,8 @@ section {
   height: 100%;
   object-fit: cover;
   opacity: 0.4;
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
 }
 
 .hero-content {
@@ -454,21 +464,40 @@ footer {
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(206, 157, 77, 0.4); }
-  70% { box-shadow: 0 0 0 10px rgba(206, 157, 77, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(206, 157, 77, 0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(206, 157, 77, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(206, 157, 77, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(206, 157, 77, 0);
+  }
 }
 
 /* Responsive Design */
 @media (max-width: 991px) {
-  .hero h1 { font-size: 3rem; }
-  .about-grid, .contact-container { grid-template-columns: 1fr; }
-  .features-container { grid-template-columns: 1fr; }
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .about-grid,
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .features-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
-  .mobile-toggle { display: block; }
-  
+  .mobile-toggle {
+    display: block;
+  }
+
   .nav-links {
     position: absolute;
     top: 80px;
@@ -481,19 +510,19 @@ footer {
     transition: 0.3s;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   }
-  
+
   .nav-links.active {
     left: 0;
   }
-  
+
   .hero-buttons {
     flex-direction: column;
   }
-  
+
   .whatsapp-float span {
     display: none;
   }
-  
+
   .whatsapp-float {
     padding: 15px;
     border-radius: 50%;
